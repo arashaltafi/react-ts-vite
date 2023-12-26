@@ -70,9 +70,20 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
       workbox: {
-        clientsClaim: true,
+        runtimeCaching: [
+          {
+            urlPattern: new RegExp('.*'),
+            handler: 'NetworkFirst'
+          }
+        ],
         skipWaiting: true,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+        clientsClaim: true,
+        sourcemap: true,
+        cleanupOutdatedCaches: false,
+        globPatterns: [
+          'assets/*.{js,css,html,ico,png,svg, png, jpg}',
+          '*.{js,css,html,ico,png,svg, png, jpg}'
+        ]
       },
       devOptions: {
         enabled: true
