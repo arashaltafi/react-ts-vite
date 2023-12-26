@@ -8,7 +8,7 @@ const App = () => {
 
       <img
         className="size-56 rounded-xl shadow-xl shadow-black cursor-pointer"
-        src="https://arashaltafi.ir/arash.jpg"
+        src="https://arashaltafi.ir/Social_Media/story-03.jpg"
         alt="arash altafi" />
 
       <p className="text-xl text-center w-[80%] text-black cursor-text">

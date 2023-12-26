@@ -73,9 +73,10 @@ export default defineConfig({
         runtimeCaching: [
           {
             urlPattern: new RegExp('.*'),
-            handler: 'NetworkFirst'
+            handler: 'NetworkFirst' //NetworkFirst  or  CacheFirst
           }
         ],
+        
         skipWaiting: true,
         clientsClaim: true,
         sourcemap: true,
