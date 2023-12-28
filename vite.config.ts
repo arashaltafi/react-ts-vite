@@ -67,7 +67,10 @@ export default defineConfig({
           }
         ]
       },
+      ////way 1 to set service worker manual
       injectRegister: 'inline',
+
+      ////way 2 to set service worker automatic with workbox
       // registerType: 'autoUpdate',
       // injectRegister: 'auto',
       // workbox: {
